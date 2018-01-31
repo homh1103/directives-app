@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  detail = false;
+  logs = [];
+  count = 0;
+
+  displayDetails() {
+    this.detail = true;
+    this.logs.push(++this.count);
+  }
+
 }
