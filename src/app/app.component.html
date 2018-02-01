@@ -9,11 +9,11 @@
       <p *ngIf="detail">Secret Password = tuna</p>
     </div>
   </div>
-  <div class="row" *ngFor="let log of logs"
+  <div class="row" *ngFor="let log of logs; let i = index"
       [ngStyle]="{backgroundColor: (log > 4 ? 'blue' : '')}"
       [ngClass]="{white: log > 4}">
     <div class="col-md-12">
-      {{log}}
+      {{log}} {{i}}
     </div>
   </div>
 </div>
